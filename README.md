@@ -5,6 +5,6 @@ Let's learn and review Java. Here are some small project ideas:
 
 - Naive n-partcile simulation
 
-- Sudoko
+- Sudoku
 
 - Tic Tac Toe
