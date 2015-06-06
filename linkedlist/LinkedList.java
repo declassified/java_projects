@@ -2,7 +2,7 @@ public class LinkedList{
 
     // Class variables
     private Node head;
-    private int number_nodes:
+    private int number_nodes;
 
     // Constructors
     LinkedList(){
@@ -11,13 +11,19 @@ public class LinkedList{
     }
     LinkedList(Node start_node){
 	this.head = start_node;
-	this.number_nodes = 1;
+	this.head.setNeighbour(null);
+	this.number_nodes = 1;	
     }
     LinkedList(String value){
 	this.head = new Node(value);
 	this.number_nodes = 1;
     }
-        
+
+    //Getter
+    public int getNumberNodes(){
+	return number_nodes;
+    }
+    
     //Add
     public void addNodeAtHead(Node inputNode){
 	inputNode.setNeighbour(head);
@@ -55,7 +61,7 @@ public class LinkedList{
 
     //Output
     public String toString(){
-	String msg; // could change this to StringBuffer
+	String msg = ""; // could change this to StringBuffer
 	Node curNode = this.head;
 
 	for (int i = 0; i < this.number_nodes; i++){
@@ -63,9 +69,9 @@ public class LinkedList{
 		msg += "\n" +  curNode.toString();
 	    }
 	    else{
-		msg += curNode.toString() + "*";
+		msg = curNode.toString() + "*";
 	    }
-	    curNode = curNode.getNeighbour():
+	    curNode = curNode.getNeighbour();
 	}
 
 	return msg;
