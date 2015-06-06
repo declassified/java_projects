@@ -5,6 +5,7 @@ public class Node {
 
     Node(String value) {
         this.setValue(value);
+        this.setNeighbour(null);
     }
 
     Node(String value, Node neighbour) {
