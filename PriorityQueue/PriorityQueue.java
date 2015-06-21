@@ -1,4 +1,3 @@
-
 public interface PriorityQueue <T extends Comparable<T>> {
 
 	public void push(PriorityQueueEntry<T> newEntry);
