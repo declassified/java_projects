@@ -73,7 +73,7 @@ implements PriorityQueue <T> {
     }
 
     public String toString() {
-        String outputString = "";
+        String outputString = "PQ ArrayList:\n";
         PriorityQueueEntry<T> nextEntry;
         Iterator<PriorityQueueEntry<T>> pqItr = entries.iterator();
         while (pqItr.hasNext()) {
